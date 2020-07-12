@@ -1,0 +1,66 @@
+.search-bar {
+    width: 400px;
+    margin-left: 30px;
+}
+
+.search-bar__input {
+    width: 100%;
+    padding: 5px;
+    font-size: 20px;
+    box-shadow: 0 5px 5pxpx rgba(0,0,0,0.3);
+}
+
+.search-bar__drop-down-list {
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    max-height: 500px;
+    overflow: auto;
+}
+
+.search-bar__drop-down-list__city {
+    padding: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid #00000030;
+}
+
+.search-bar__drop-down-list__city:hover {
+    background-color: #0000FF30;
+}
+
+.selected-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.selected-list__chip {
+    position: relative;
+    margin: 0 10px 12px 0;
+    padding: 5px;
+    width: 300px;
+    border: 1px solid #00000050;
+    border-radius: 8px;
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+    background-color: #2ca8fa38;
+}
+
+.selected-list__chip__city {
+    list-style-type: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%;
+}
+
+.selected-list__chip__delete-button {
+    list-style-type: none;
+    cursor: pointer;
+    position: absolute;
+    right: 3%;
+}
+
+.selected-list__chip__delete-button:hover {
+    color: #a33232;
+}
